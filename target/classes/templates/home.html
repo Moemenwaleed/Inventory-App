@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${appName}">System Application</title>
+</head>
+<body>
+    <div id="formArea">
+        <form method="POST" action="/api/products/" id="addProduct">
+            <label>Title:* <input type="text" placeholder="Product title" name="title" required/></label>
+            <label>Company:* <input type="text" placeholder="Product company" name="company" required/></label>
+            <label>Quantity:* <input type="number" name="quantity" value="1" min="1" required/></label>
+
+            <input type="reset" value="Clear" />
+            <input type="submit" value="Add Product" />
+        </form>
+    </div>
+    <div id="productsArea">
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Company</th>
+                    <th>Quantity
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="productsTableBody">
+                <tr><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+        <button id="exportProducts">Export to CSV</button>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<style>
+    /* Basic Styling */
+    label {
+        display: block;
+        font-size: 16px;
+        font-family: "Arial";
+    }
+
+    input[type="text"], input[type="number"] {
+        box-sizing: border-box;
+        font-size: 12px;
+
+        border-radius: 2.5px;
+        border: 1px solid #ccc;
+
+        padding: 6px 10px;
+        margin: 8px 0;
+    }
+
+    input[type="reset"], input[type="submit"], button {
+        font-size: 16px;
+        background-color: #ccc;
+        border-radius: 0px;
+        border: none;
+        padding: 6px 10px;
+    }
+
+    input[type="reset"]:hover, input[type="submit"]:hover {
+        cursor: pointer;
+        background-color: #e2e2e2;
+    }
+
+    table {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+        background-color: #ddd;
+    }
+
+    th {
+        background-color: #5991DC;
+        color: white;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+</style>
+</html>
