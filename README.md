@@ -16,4 +16,9 @@ Once the enviroment is set, the application can run through the following comman
 
 It is aswell recommended to have IntelliJ IDEA to easily re-compile the files.
 
+Once everything is running, the application can be accessed through <code>http://localhost:8080</code>
 
+<h3>Images</h3>
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/21148636/150261007-52f3aa00-4490-422e-aa06-c197e22c6d80.png">
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/21148636/150261077-4d8e6906-204e-46da-8803-13df17cf597a.png">
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/21148636/150261106-284c7b82-0fec-4f86-a420-91ca0c89f945.png">
