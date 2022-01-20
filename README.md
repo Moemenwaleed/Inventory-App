@@ -9,6 +9,9 @@ All the api calls are called by the JavaScript functions.
 The application runs on an in-memory database, which means all database is going to be deleted upon server restart.
 
 <h3>Requirements</h3>
+<h3>
+*****MAKE SURE TO DOWNLOAD THE APPLICATION FROM THE RELEASES!!!!!!
+</h3>
 In order to run this application, it is required to have Java 11.x or any late Java development kits, as well as Maven installed.
 
 Once the enviroment is set, the application can run through the following command. (in the project's root folder)
